@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b38e45b5-f1bc-4566-9d6c-5afe0d79eaf9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1gge64r7A563jYZRfxhWKKbF7V9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoProjectSettingsConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build go-web-chitchat" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="go-web-chitchat" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="go-web-chitchat" />
+      <directory value="$PROJECT_DIR$" />
+      <output_directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="104" y="46" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598543024139">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="104" y="46" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.723@0.23.1280.723" timestamp="1598543024139" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1598543062300">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1598543062300" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1598543062298">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1598543062298" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1598543062297">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1598543062297" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1598543062299">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1598543062299" />
+    <state x="141" y="23" key="SettingsEditor" timestamp="1598541068207">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="141" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1598541068207" />
+  </component>
+</project>
