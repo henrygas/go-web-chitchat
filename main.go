@@ -6,7 +6,7 @@ import (
 
 func main() {
 	mux := http.NewServeMux()
-	files := http.FileServer(http.Dir("public"))
+	files := http.FileServer(http.Dir(static))
 	mux.Handle("/static/", http.StripPrefix("/static/", files))
 	mux.HandleFunc("/", index)
 	mux.HandleFunc("/err", err)
@@ -16,7 +16,6 @@ func main() {
 	mux.HandleFunc("/signup", signup)
 	mux.HandleFunc("/signup_account", signupAccount)
 	mux.HandleFunc("/authenticate", authenticate)
-	mux.HandleFunc("/login", login)
 
 	mux.HandleFunc("/thread/new", newThread)
 	mux.HandleFunc("/thread/create", createThread)
@@ -24,7 +23,7 @@ func main() {
 	mux.HandleFunc("/thread/read", readThread)
 
 	server := &http.Server{
-		Addr: "0.0.0.0:8080",
+		Addr:    "0.0.0.0:8080",
 		Handler: mux,
 	}
 	_ = server.ListenAndServe()

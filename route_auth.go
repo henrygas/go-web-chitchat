@@ -1,6 +1,9 @@
 package main
 
-import "net/http"
+import (
+	"go-web-chitchat/data"
+	"net/http"
+)
 
 func authenticate(w http.ResponseWriter, r *http.Request) {
 	err := r.ParseForm()
@@ -9,10 +12,10 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 	}
 	user, _ := data.UserByEmail(r.PostFormValue("email"))
 	if user.Password == data.Encrypt(r.PostFormValue("password")) {
-		session := user.CreateSession()
+		session, _ := user.CreateSession()
 		cookie := http.Cookie{
-			Name: cookieName,
-			Value: session.Uuid,
+			Name:     cookieName,
+			Value:    session.Uuid,
 			HttpOnly: true,
 		}
 		http.SetCookie(w, &cookie)

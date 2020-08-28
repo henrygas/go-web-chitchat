@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"go-web-chitchat/data"
 	"html/template"
 	"net/http"
 )
@@ -12,27 +14,22 @@ func index(w http.ResponseWriter, r *http.Request) {
 	}
 
 	_, err = session(w, r)
-
-	publicFiles := []string{
-		"templates/layout.html",
-		"templates/public.navbar.html",
-		"templates/index.html",
-	}
-	privateFiles := []string{
-		"templates/layout.html",
-		"templates/private.navbar.html",
-		"templates/index.html",
-	}
-	var templates *template.Template
 	if err != nil {
-		templates = template.Must(template.ParseFiles(publicFiles...))
+		generateHTML(w, threads, "layout", "public.navbar", "index")
 	} else {
-		templates = template.Must(template.ParseFiles(privateFiles...))
+		generateHTML(w, threads, "layout", "private.navbar", "index")
 	}
-	_ = templates.ExecuteTemplate(w, "layout", threads)
 }
 
 func err(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func generateHTML(w http.ResponseWriter, data interface{}, fn ...string) {
+	var files []string
+	for _, file := range fn {
+		files = append(files, fmt.Sprintf("templates/%s.html", file))
+	}
+	templates := template.Must(template.ParseFiles(files...))
+	_ = templates.ExecuteTemplate(w, "layout", data)
+}
