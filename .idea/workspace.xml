@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b38e45b5-f1bc-4566-9d6c-5afe0d79eaf9" name="Default Changelist" comment="mvc">
-      <change afterPath="$PROJECT_DIR$/errors.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/post.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/thread.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_thread.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
-    </list>
+    <list default="true" id="b38e45b5-f1bc-4566-9d6c-5afe0d79eaf9" name="Default Changelist" comment="API implements" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +96,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="mvc" />
+    <MESSAGE value="API implements" />
+    <option name="LAST_COMMIT_MESSAGE" value="API implements" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -156,10 +147,10 @@
       <screen x="0" y="23" width="1280" height="723" />
     </state>
     <state x="141" y="23" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1598541068207" />
-    <state x="240" y="124" key="Vcs.Push.Dialog.v2" timestamp="1598636535745">
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2" timestamp="1598892457853">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1598636535745" />
+    <state x="240" y="124" key="Vcs.Push.Dialog.v2/0.23.1280.723@0.23.1280.723" timestamp="1598892457853" />
     <state x="305" y="70" width="670" height="676" key="search.everywhere.popup" timestamp="1598890259047">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
