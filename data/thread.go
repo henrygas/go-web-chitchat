@@ -14,7 +14,7 @@ type Thread struct {
 }
 
 func (thread *Thread) NumReplies() (count int) {
-	rows, err := Db.Query("SELECT count(*) FROM posts WHERE thread_id = $1", thread.Id)
+	rows, err := Db.Query("SELECT count(*) FROM posts WHERE thread_id = $1;", thread.Id)
 	if err != nil {
 		return
 	}
@@ -29,7 +29,7 @@ func (thread *Thread) NumReplies() (count int) {
 
 func (thread *Thread) Create() (err error) {
 	statement := "INSERT INTO threads(uuid, topic, user_id, created_at) VALUES ($1, $2, $3, $4)" +
-		"returning id, uuid, created_at"
+		"returning id, uuid, created_at;"
 	stmt, err := Db.Prepare(statement)
 	if err != nil {
 		return
@@ -43,7 +43,7 @@ func (thread *Thread) Create() (err error) {
 
 func GetThreadByUuid(uuid string) (*Thread, error) {
 	thread := Thread{}
-	query := "SELECT id, uuid, topic, user_id, created_at FROM threads WHERE uuid=$1"
+	query := "SELECT id, uuid, topic, user_id, created_at FROM threads WHERE uuid=$1;"
 	stmt, err := Db.Prepare(query)
 	if err != nil {
 		return nil, err
