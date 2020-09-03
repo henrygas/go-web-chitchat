@@ -44,6 +44,7 @@ func createThread(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
+	http.Redirect(w, r, "/", 302)
 	return
 }
 
@@ -85,7 +86,7 @@ func postThread(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		return
 	}
-	http.Redirect(w, r, fmt.Sprintf("/thread/read?id=%d", thread.Uuid), 302)
+	http.Redirect(w, r, fmt.Sprintf("/thread/read?id=%s", thread.Uuid), 302)
 	return
 }
 

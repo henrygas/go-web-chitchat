@@ -13,6 +13,19 @@ type Thread struct {
 	CreatedAt time.Time
 }
 
+func (thread *Thread) User() (user *User, err error) {
+	user = &User{}
+	err = Db.QueryRow("SELECT id, uuid, name, email, created_at"+
+		" FROM users WHERE id = $1;", thread.UserId).
+		Scan(&user.Id, &user.Uuid, &user.Name, &user.Email, &user.CreatedAt)
+	return
+}
+
+func (thread *Thread) CreatedAtDate() (createdAtDate string) {
+	createdAtDate = formatTime(thread.CreatedAt)
+	return
+}
+
 func (thread *Thread) NumReplies() (count int) {
 	rows, err := Db.Query("SELECT count(*) FROM posts WHERE thread_id = $1;", thread.Id)
 	if err != nil {
@@ -56,4 +69,24 @@ func GetThreadByUuid(uuid string) (*Thread, error) {
 		return nil, err
 	}
 	return &thread, nil
+}
+
+func (thread *Thread) Posts() (posts []*Post) {
+	posts = make([]*Post, 0)
+	stmt, err := Db.Prepare("SELECT id, uuid, body, user_id, thread_id, created_at FROM posts" +
+		" WHERE thread_id=$1")
+	if err != nil {
+		return
+	}
+	rows, err := stmt.Query(thread.Id)
+	for rows.Next() {
+		post := Post{}
+		if err := rows.Scan(&post.Id, &post.Uuid, &post.Body,
+			&post.UserId, &post.ThreadId, &post.CreatedAt); err != nil {
+			continue
+		} else {
+			posts = append(posts, &post)
+		}
+	}
+	return
 }

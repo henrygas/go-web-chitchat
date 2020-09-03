@@ -110,7 +110,7 @@ func (user *User) CreateSession() (session Session, err error) {
 	defer stmt.Close()
 	// use QueryRow to return a row and scan the returned id into Session struct
 	err = stmt.QueryRow(createUUID(), user.Email, user.Id, time.Now()).
-		Scan(&session.Id, &session.Email, &session.Id, &session.CreatedAt)
+		Scan(&session.Id, &session.Uuid, &session.Email, &session.UserId, &session.CreatedAt)
 	return
 }
 

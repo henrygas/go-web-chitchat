@@ -40,8 +40,9 @@ func generateHTML(w http.ResponseWriter, data interface{}, fn ...string) {
 	for _, file := range fn {
 		files = append(files, fmt.Sprintf("templates/%s.html", file))
 	}
-	fmt.Printf("%v\n", files)
-	templates := template.New("mylayout")
-	templates = template.Must(template.ParseFiles(files...))
-	_ = templates.Execute(w, data)
+	templates, err := template.ParseFiles(files...)
+	if err != nil {
+		return
+	}
+	_ = templates.ExecuteTemplate(w, "layout", data)
 }

@@ -11,10 +11,10 @@ func session(w http.ResponseWriter, r *http.Request) (session data.Session, err 
 		return
 	}
 
-	sess := data.Session{
+	session = data.Session{
 		Uuid: cookie.Value,
 	}
-	if ok, _ := sess.Check(); !ok {
+	if ok, _ := session.Check(); !ok {
 		err = errSessionInvalid
 	}
 	return
