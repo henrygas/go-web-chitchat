@@ -19,18 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b38e45b5-f1bc-4566-9d6c-5afe0d79eaf9" name="Default Changelist" comment="template name">
-      <change afterPath="$PROJECT_DIR$/data/util.go" afterDir="false" />
+    <list default="true" id="b38e45b5-f1bc-4566-9d6c-5afe0d79eaf9" name="Default Changelist" comment="complete version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/post.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/post.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/thread.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/data/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go_build_go_web_chitchat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_index.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_index.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/route_thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/route_thread.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/private.thread.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/private.thread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.go" beforeDir="false" afterPath="$PROJECT_DIR$/util.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chitchat" beforeDir="false" afterPath="$PROJECT_DIR$/chitchat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +105,8 @@
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="js,css,fonts" />
     <MESSAGE value="template name" />
-    <option name="LAST_COMMIT_MESSAGE" value="template name" />
+    <MESSAGE value="complete version" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete version" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -129,46 +121,46 @@
     </state>
     <state width="653" height="466" key="DebuggerActiveHint/0.23.1280.723@0.23.1280.723" timestamp="1599066925719" />
     <state width="669" height="467" key="DebuggerActiveHint/0.23.1280.724@0.23.1280.724" timestamp="1599104664327" />
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom" timestamp="1599104980374">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom" timestamp="1599178218902">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1599099372174" />
-    <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599104980374" />
-    <state width="1238" height="224" key="GridCell.Tab.0.center" timestamp="1599104980373">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.723@0.23.1280.723" timestamp="1599178218902" />
+    <state width="1238" height="180" key="GridCell.Tab.0.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599114895853" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center" timestamp="1599178218901">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1599099372174" />
-    <state width="1238" height="224" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1599104980373" />
-    <state width="1238" height="224" key="GridCell.Tab.0.left" timestamp="1599104980373">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.723@0.23.1280.723" timestamp="1599178218901" />
+    <state width="1238" height="180" key="GridCell.Tab.0.center/0.23.1280.724@0.23.1280.724" timestamp="1599114895853" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left" timestamp="1599178218900">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1599099372172" />
-    <state width="1238" height="224" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1599104980373" />
-    <state width="1238" height="224" key="GridCell.Tab.0.right" timestamp="1599104980373">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.723@0.23.1280.723" timestamp="1599178218900" />
+    <state width="1238" height="180" key="GridCell.Tab.0.left/0.23.1280.724@0.23.1280.724" timestamp="1599114895852" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right" timestamp="1599178218901">
+      <screen x="0" y="23" width="1280" height="723" />
     </state>
-    <state width="1238" height="224" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1599099372174" />
-    <state width="1238" height="224" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1599104980373" />
-    <state width="1238" height="224" key="GridCell.Tab.1.bottom" timestamp="1599104980220">
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.723@0.23.1280.723" timestamp="1599178218901" />
+    <state width="1238" height="180" key="GridCell.Tab.0.right/0.23.1280.724@0.23.1280.724" timestamp="1599114895853" />
+    <state width="1238" height="224" key="GridCell.Tab.1.bottom" timestamp="1599114895845">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.1.bottom/0.23.1280.723@0.23.1280.723" timestamp="1599099371976" />
-    <state width="1238" height="224" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599104980220" />
-    <state width="1238" height="224" key="GridCell.Tab.1.center" timestamp="1599104980218">
+    <state width="1238" height="224" key="GridCell.Tab.1.bottom/0.23.1280.724@0.23.1280.724" timestamp="1599114895845" />
+    <state width="1238" height="224" key="GridCell.Tab.1.center" timestamp="1599114895845">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.1.center/0.23.1280.723@0.23.1280.723" timestamp="1599099371975" />
-    <state width="1238" height="224" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1599104980218" />
-    <state width="1238" height="224" key="GridCell.Tab.1.left" timestamp="1599104980218">
+    <state width="1238" height="224" key="GridCell.Tab.1.center/0.23.1280.724@0.23.1280.724" timestamp="1599114895845" />
+    <state width="1238" height="224" key="GridCell.Tab.1.left" timestamp="1599114895845">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.1.left/0.23.1280.723@0.23.1280.723" timestamp="1599099371975" />
-    <state width="1238" height="224" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1599104980218" />
-    <state width="1238" height="224" key="GridCell.Tab.1.right" timestamp="1599104980219">
+    <state width="1238" height="224" key="GridCell.Tab.1.left/0.23.1280.724@0.23.1280.724" timestamp="1599114895845" />
+    <state width="1238" height="224" key="GridCell.Tab.1.right" timestamp="1599114895845">
       <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1599099371976" />
-    <state width="1238" height="224" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1599104980219" />
+    <state width="1238" height="224" key="GridCell.Tab.1.right/0.23.1280.724@0.23.1280.724" timestamp="1599114895845" />
     <state x="141" y="23" key="SettingsEditor" timestamp="1598541068207">
       <screen x="0" y="23" width="1280" height="723" />
     </state>
@@ -187,31 +179,5 @@
     </state>
     <state x="305" y="70" width="670" height="676" key="search.everywhere.popup/0.23.1280.723@0.23.1280.723" timestamp="1598890259047" />
     <state x="305" y="70" width="670" height="677" key="search.everywhere.popup/0.23.1280.724@0.23.1280.724" timestamp="1599102749658" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/route_auth.go</url>
-          <line>41</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/route_thread.go</url>
-          <line>55</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/data/post.go</url>
-          <line>14</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/route_thread.go</url>
-          <line>88</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
